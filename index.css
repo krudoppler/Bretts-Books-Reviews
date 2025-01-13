@@ -1,10 +1,12 @@
+/* HTML Element Styles */
+
 html {
   font-family: "Nunito Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  color:#dcdcdc;
+
   line-height: 1.5;
 }
 
@@ -15,17 +17,41 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to right top, #141e30, #243b55);
+    
 }
+
+/* Flex Containers */
+
+.title-container,
+.intro-paragraph-container,
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
 
 .title-container {
     text-align: center;
     margin-bottom: 0em;
+    min-height: 250px;
+    background: linear-gradient(to top right, #4F359B, #3796e4);
+    text-shadow: 0px 0px 2px #C7EFCF ;
 }
 
 .intro-paragraph-container {
     text-align: left;
     margin: 2em 3em;
+}
+
+.profile-picture {
+  width: 200px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 2em;
+  border: 4px solid #2D3142;
 }
 
 
