@@ -16,9 +16,8 @@ html, body {
     padding: 0;
 }
 
-body {
-    
-}
+
+
 
 /* Flex Containers */
 
@@ -37,8 +36,8 @@ body {
     text-align: center;
     margin-bottom: 0em;
     min-height: 250px;
-    background: linear-gradient(to top right, #4F359B, #3796e4);
-    text-shadow: 0px 0px 2px #C7EFCF ;
+    background-color: rgb(178, 223, 248);
+    text-shadow: 0px 0px 5px #cd2b2b ;
 }
 
 .intro-paragraph-container {
@@ -54,6 +53,14 @@ body {
   border: 4px solid #2D3142;
 }
 
+.intro-paragraph-container::after {
+  content: "";
+  display: block;
+  width: 80%; /* Adjust width as needed */
+  margin: 1em auto; /* Centers the line */
+  border-bottom: 1px solid #ccc; /* Line color */
+}
+
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -63,7 +70,21 @@ body {
   p {
     font-size: 1.25rem;
   }
+
+  .book-review-container {
+    display: flex;
+    text-align: left;
+    margin-left: 3.125em;
+    align-items: center;
+  }
+
+  .book-review-container img {
+    width: 120px;
+    border-radius: 3.6px;
+    padding: 2em 2em;
+  }
 }
+
 
 @media (max-width: 767px) {
   h1 {
@@ -72,6 +93,12 @@ body {
   p {
     font-size: 1.0rem;
   }
+
+  .book-review-container {
+    display: flex;
+    flex-direction: column;
+
+}
 }
 
 @media (max-width: 509px) {
@@ -80,5 +107,9 @@ body {
   }
   p {
     font-size: 0.75rem;
+  }
+  .book-review-container {
+    display: flex;
+    flex-direction: column;
   }
 }
