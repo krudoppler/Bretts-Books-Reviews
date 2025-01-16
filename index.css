@@ -36,8 +36,10 @@ html, body {
     text-align: center;
     margin-bottom: 0em;
     min-height: 250px;
-    background-color: rgb(178, 223, 248);
-    text-shadow: 0px 0px 5px #cd2b2b ;
+    background: blue url(images/back.png) no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 3px 2px #3b74dd ;
 }
 
 .intro-paragraph-container {
@@ -65,6 +67,7 @@ html, body {
 /* Media Queries */
 @media (min-width: 768px) {
   h1 {
+    padding-top: 2em;
     font-size: 3.5rem;
   }
   p {
@@ -88,6 +91,7 @@ html, body {
 
 @media (max-width: 767px) {
   h1 {
+    padding-top: 2em;
     font-size: 2.5rem;
   }
   p {
@@ -97,7 +101,11 @@ html, body {
   .book-review-container {
     display: flex;
     flex-direction: column;
-
+}
+.book-review-container img {
+  width: 120px;
+  border-radius: 3.6px;
+  padding: 2em 2em;
 }
 }
 
